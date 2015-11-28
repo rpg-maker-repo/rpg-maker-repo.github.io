@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io/issues"
   },
-  "homepage": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io#readme"
+  "homepage": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
