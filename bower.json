@@ -1,0 +1,28 @@
+{
+  "name": "rpg-maker-repo.github.io",
+  "description": "Website for RPG Maker Assets Repository.",
+  "main": "index.js",
+  "authors": [
+    "Filipe Oliveira <contato@fmoliveira.com.br>"
+  ],
+  "keywords": [
+    "rpg",
+    "maker",
+    "assets",
+    "repository"
+  ],
+  "homepage": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
