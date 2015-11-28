@@ -1,0 +1,24 @@
+{
+  "name": "rpg-maker-repo.github.io",
+  "version": "0.1.0",
+  "description": "Website for RPG Maker Assets Repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpg-maker-repo/rpg-maker-repo.github.io.git"
+  },
+  "keywords": [
+    "rpg",
+    "maker",
+    "assets",
+    "repository"
+  ],
+  "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
+  "bugs": {
+    "url": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io/issues"
+  },
+  "homepage": "https://github.com/rpg-maker-repo/rpg-maker-repo.github.io#readme"
+}
