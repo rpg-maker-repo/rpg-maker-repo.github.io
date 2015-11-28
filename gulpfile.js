@@ -6,6 +6,8 @@ var gulp = require('gulp'),
 
 const bower = './bower_components';
 const bootstrap = `${bower}/bootstrap-sass/assets`;
+const angular = `${bower}/angular/`;
+
 const src = './src';
 const dist = './dist';
 
@@ -35,7 +37,11 @@ gulp.task('html', () => {
 });
 
 gulp.task('js', () => {
-	gulp.src(`${bootstrap}/javascripts/bootstrap.{js,min.js}`)
+	gulp.src([
+		`${bootstrap}/javascripts/bootstrap.{js,min.js}`,
+		`${angular}/angular.{js,min.js,min.js.map}`,
+		`${src}/js/**/*.js`
+	])
 		.pipe(gulp.dest(`${dist}/js/`));
 });
 

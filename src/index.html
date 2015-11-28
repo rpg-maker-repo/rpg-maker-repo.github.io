@@ -28,7 +28,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body ng-app="AssetsApp">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -54,11 +54,25 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h1>Bootstrap starter template</h1>
-			<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+			<h1>Assets Repository</h1>
+		</div>
+
+		<div ng-controller="HomeCtrl as vm" class="row">
+			<div class="col-sm-6 col-md-4" ng-repeat="vm in vm.list">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>{{ vm.name }}</h3>
+						<p>{{ vm.description }}</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div><!-- /.container -->
+
+	<!-- Angular App -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
