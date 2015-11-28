@@ -29,6 +29,11 @@ gulp.task('fonts', () => {
 	// add font awesome
 });
 
+gulp.task('html', () => {
+	gulp.src(`${src}/**/*.html`)
+		.pipe(gulp.dest(dist));
+});
+
 gulp.task('js', () => {
 	gulp.src(`${bootstrap}/javascripts/bootstrap.{js,min.js}`)
 		.pipe(gulp.dest(`${dist}/js/`));
@@ -37,6 +42,7 @@ gulp.task('js', () => {
 gulp.task('build', [
 	'css',
 	'fonts',
+	'html',
 	'js'
 ]);
 
